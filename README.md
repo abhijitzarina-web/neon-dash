@@ -58,14 +58,32 @@ Download using the command or copy and paste the code, play the game, and feel f
 
 Since this is a html based game you can use html viewers like CodeShack to run the game
 Some popular ones include 
+
+
 Static.app html viewer https://static.app/html-viewer
+
+
 CodeShack html viewer. https://codeshack.io/html-viewer/
+
+
 html viewer responsive tools online. https://html.onlineviewer.net
+
+
 readddy.ai. html viewer online. https://readdy.ai/tools/html-viewer
+
+
 tinnyyy.host html viewer. https://tiiny.host/html-viewer/
+
+
 codebuetifier html viewer online https://codebeautify.org/htmlviewer
+
+
 W3Schools html viewer online https://www.w3schools.com/html/tryit.asp?filename=tryhtml_editor
+
+
 codepen.io= codepen.io < TRY THE EDITOR < finish the tutorial  start from scratch  copy and paste
+
+
 
 
 🛡️ License
