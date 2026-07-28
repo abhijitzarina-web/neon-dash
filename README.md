@@ -3,9 +3,12 @@
 <b>A high-octane, cyber-styled arcade runner built completely in vanilla HTML5, CSS3, and JavaScript.</b>
 </p>
 🌟 Overview
+
 Neon Dash Ultra is an action-packed, fast-paced infinite runner that brings classic arcade action into a futuristic neon aesthetic. Dodge dynamic obstacles, time your jumps and ducks, collect rare coins, and leverage powerful upgrades, drones, and trails to conquer the leaderboard!
 Everything runs directly in your web browser with zero external dependencies or frameworks required.
 📁 File Directory Structure
+
+
 neon-dash-ultra/
 │
 ├── index.html    # Main entry point containing the game layout, UI overlays, and menus
