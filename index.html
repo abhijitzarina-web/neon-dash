@@ -1,1 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Neon Dash Ultra - Ultimate Arcade Edition v2.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <div id="game-container">
+    <div class="ui-overlay">
+      <div id="score-display">SCORE: 0</div>
+      <div id="high-score-display">HI: 0</div>
+    </div>
+    <div class="status-bar" id="status-bar">COINS: 0 | ARCADE STATUS: READY</div>
+
+    <div id="start-screen" class="screen-message">
+      <h1>NEON DASH ULTRA</h1>
+      <p>Ultimate Arcade Edition — Trails, Pets, Powers, Modifiers & Achievements!</p>
+      
+      <div class="difficulty-selector">
+        <button class="diff-btn active" data-diff="easy">EASY</button>
+        <button class="diff-btn" data-diff="normal">NORMAL</button>
+        <button class="diff-btn" data-diff="hard">HARD</button>
+        <button class="diff-btn" data-diff="arcade">ARCADE EXTREME</button>
+      </div>
+
+      <div class="btn-group">
+        <button class="btn" id="start-btn">INSERT COIN & PLAY</button>
+        <button class="btn btn-secondary" id="open-hub-btn">ARCADE HUB & SHOP</button>
+        <a class="btn btn-secondary" href="https://forms.cloud.microsoft/r/CgqJpYWd6M" target="_blank" style="font-size: 11px; padding: 6px 16px;">🎮 FEEDBACK FORM</a>
+      </div>
+    </div>
+
+    <div id="hub-screen" class="screen-message hidden">
+      <h1>ARCADE TERMINAL</h1>
+      <p id="hub-coin-display">Total Coins: 0</p>
+      
+      <div class="tab-container">
+        <button class="tab-btn active" data-tab="shop">Upgrades</button>
+        <button class="tab-btn" data-tab="skins">Skins/Trails</button>
+        <button class="tab-btn" data-tab="pets">Drones</button>
+        <button class="tab-btn" data-tab="quests">Quests</button>
+        <button class="tab-btn" data-tab="ach">Badges</button>
+        <button class="tab-btn" data-tab="lb">Scores</button>
+        <button class="tab-btn" data-tab="data">Sync</button>
+      </div>
+
+      <div id="tab-shop" class="hub-box">
+        <div class="hub-item">
+          <span id="desc-shield">Shield Duration (Lvl 0)</span>
+          <button class="action-btn" id="buy-shield">Cost: 50</button>
+        </div>
+        <div class="hub-item">
+          <span id="desc-magnet">Magnet Range (Lvl 0)</span>
+          <button class="action-btn" id="buy-magnet">Cost: 50</button>
+        </div>
+        <div class="hub-item">
+          <span id="desc-boost">Speed Boost Duration (Lvl 0)</span>
+          <button class="action-btn" id="buy-boost">Cost: 50</button>
+        </div>
+      </div>
+
+      <div id="tab-skins" class="hub-box hidden">
+        <div class="hub-item">
+          <span id="skin-desc-1">Cyber Cube (Skin)</span>
+          <button class="action-btn" id="buy-skin-1">Equipped</button>
+        </div>
+        <div class="hub-item">
+          <span id="skin-desc-2">Rainbow Trail</span>
+          <button class="action-btn" id="buy-trail-1">Cost: 150</button>
+        </div>
+        <div class="hub-item">
+          <span id="skin-desc-3">Fire Sparks Trail</span>
+          <button class="action-btn" id="buy-trail-2">Cost: 150</button>
+        </div>
+      </div>
+
+      <div id="tab-pets" class="hub-box hidden">
+        <div class="hub-item">
+          <span>Coin Drone (+10% Coin Bonus)</span>
+          <button class="action-btn" id="buy-pet-1">Cost: 300</button>
+        </div>
+        <div class="hub-item">
+          <span>Shield Bot (Periodic Auto-Shield)</span>
+          <button class="action-btn" id="buy-pet-2">Cost: 500</button>
+        </div>
+      </div>
+
+      <div id="tab-quests" class="hub-box hidden"></div>
+      <div id="tab-ach" class="hub-box hidden"></div>
+      <div id="tab-lb" class="hub-box hidden"></div>
+
+      <div id="tab-data" class="hub-box hidden">
+        <p style="font-size: 9px; margin:0 0 3px 0;">Backup/Restore save strings:</p>
+        <textarea id="data-textarea" class="data-area" placeholder="Paste save string here..."></textarea>
+        <div style="display: flex; gap: 4px;">
+          <button class="action-btn" id="export-btn" style="flex:1;">Export Data</button>
+          <button class="action-btn" id="import-btn" style="flex:1;">Import Data</button>
+        </div>
+      </div>
+
+      <button class="btn" id="close-hub-btn" style="margin-top:4px;">MAIN MENU</button>
+    </div>
+
+    <div id="gameover-screen" class="screen-message hidden">
+      <h1>GAME OVER</h1>
+      <p id="final-stats">Score: 0<br>Coins Collected: 0</p>
+      <div class="btn-group">
+        <button class="btn" id="restart-btn">CONTINUE / RETRY</button>
+        <button class="btn btn-secondary" id="home-btn">MAIN MENU</button>
+        <a class="btn btn-secondary" href="https://forms.cloud.microsoft/r/CgqJpYWd6M" target="_blank" style="font-size: 11px; padding: 6px 16px;">🎮 FEEDBACK FORM</a>
+      </div>
+    </div>
+
+    <canvas id="gameCanvas" width="650" height="420"></canvas>
+  </div>
+
+  <div class="controls">
+    <div class="control-group">
+      <button class="control-btn" id="btn-left">◀</button>
+      <button class="control-btn" id="btn-right">▶</button>
+    </div>
+    <div class="control-group">
+      <button class="control-btn" id="btn-down">▼</button>
+      <button class="control-btn" id="btn-up">▲</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
