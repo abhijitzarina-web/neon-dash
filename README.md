@@ -87,6 +87,8 @@ please use the game.html file to play the game on the html viewers mentioned abo
 
 
 🛡️ License
+
+
 This project is open-source and available under the Apache License 2.0. 
 
 Please do not deploy this project somewhere else.
