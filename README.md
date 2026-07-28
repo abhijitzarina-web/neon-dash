@@ -52,5 +52,21 @@ Feel free to submit your feedback using the Feedback Form.
 
 Contributions, bug reports, and feature requests are welcome! 🤗
 Download using the command or copy and paste the code, play the game, and feel free to use the submit feedback option inside the game menu to fill out the feedback form.
+
+
+❓ How To Play
+
+Since this is a html based game you can use html viewers like CodeShack to run the game
+Some popular ones include 
+Static.app html viewer https://static.app/html-viewer
+CodeShack html viewer. https://codeshack.io/html-viewer/
+html viewer responsive tools online. https://html.onlineviewer.net
+readddy.ai. html viewer online. https://readdy.ai/tools/html-viewer
+tinnyyy.host html viewer. https://tiiny.host/html-viewer/
+codebuetifier html viewer online https://codebeautify.org/htmlviewer
+W3Schools html viewer online https://www.w3schools.com/html/tryit.asp?filename=tryhtml_editor
+codepen.io= codepen.io < TRY THE EDITOR < finish the tutorial  start from scratch  copy and paste
+
+
 🛡️ License
-This project is open-source and available under the Apache License 2.0.
+This project is open-source and available under the Apache License 2.0. Please do not deploy this project somewhere else 
