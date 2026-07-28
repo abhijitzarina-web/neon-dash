@@ -83,6 +83,8 @@ W3Schools html viewer online https://www.w3schools.com/html/tryit.asp?filename=t
 
 codepen.io= codepen.io < TRY THE EDITOR < finish the tutorial  start from scratch  copy and paste
 
+please use the game.html file to play the game on the html viewers mentioned above to copy and paste onto your html viewer. Make sure that when you paste the code and try to play it it will not work correctly you need to play it in a new tab
+
 
 🛡️ License
 This project is open-source and available under the Apache License 2.0. 
