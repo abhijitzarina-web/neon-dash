@@ -84,7 +84,7 @@ W3Schools html viewer online https://www.w3schools.com/html/tryit.asp?filename=t
 codepen.io= codepen.io < TRY THE EDITOR < finish the tutorial  start from scratch  copy and paste
 
 
-
-
 🛡️ License
-This project is open-source and available under the Apache License 2.0. Please do not deploy this project somewhere else 
+This project is open-source and available under the Apache License 2.0. 
+
+Please do not deploy this project somewhere else.
