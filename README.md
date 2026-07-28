@@ -14,8 +14,13 @@ Everything runs directly in your web browser with zero external dependencies or 
 
 neon-dash-ultra/
 │
+
 ├── index.html    # Main entry point containing the game layout, UI overlays, and menus
+
+
 ├── style.css     # Cyber-styled neon aesthetic, responsive containers, and HUD elements
+
+
 └── game.js       # Core game loop, player physics, obstacle spawning, upgrades, and save systems
 
 
